@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Lawrence Lin
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Lawrence Lin} \\ \vspace{1pt}
+    \small 925-918-2478 $|$ \href{mailto:x@x.com}{\color{blue}\underline{lawrencedlin@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/llinnn}{\color{blue}\underline{linkedin.com/in/llinnn}} $|$
+    \href{https://github.com/lawrencedlin}{\color{blue}\underline{github.com/lawrencedlin}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of San Francisco}{San Francisco, CA}
+      {M.S. Data Science}{July 2021 - August 2022 (Expected)}
+    \resumeSubheading
+      {University of California, Santa Barbara}{Santa Barbara, CA}
+      {B.S. Statistics}{August 2017 - June 2021}
+  \resumeSubHeadingListEnd
+    \begin{itemize}[leftmargin = 0.15in, label={}]
+    \small{\item{
+     \textbf{Courses}{: Advanced Machine Learning, Bayesian Statistics, Distributed Computing, Time Series, Stochastic Processes}}}
+     \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Science Intern}{November 2021 - Present}
+      {Walmart Labs}{Sunnyvale, CA}
+      \resumeItemListStart
+        \resumeItem{Analyzed customers' seasonal purchase behavior for festivals using Apache Spark and Seaborn}
+        \resumeItem{Worked on feature engineering and data cleaning using Apache Hadoop}
+        \resumeItem{Developed a Next-item Sequential Recommendation Neural Network Model in TensorFlow}
+        \resumeItem{Deployed model on Google Dataproc}
+        \resumeItem{Created validation metrics to assess seasonal inference of model}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Research Assistant}{January 2021 - June 2021}
+      {Sansum Diabetes Research Institute}{Santa Barbara, CA}
+      \resumeItemListStart
+        \resumeItem{Geographically visualized diabetes severity by zip code using Folium}
+        
+        \resumeItem{Modeled HbA1c with regression models achieving an $R^{2}$ of 0.77}
+        
+        \resumeItem{Authored and presented weekly written reports of insights to SDRI researchers}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Gretler Fellow}{September 2019 - June 2020}
+      {University of California, Santa Barbara}{Santa Barbara, CA}
+      \resumeItemListStart
+        \resumeItem{Web-scraped thousands of pages of state legislative data using BeautifulSoup}
+        \resumeItem{Cleaned, processed, and validated data using Pandas}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Predict Implicit Ratings (Kaggle)} $|$ \emph{Pytorch, FastAi, NumPy, Pandas}}{}
+          \resumeItemListStart
+            \resumeItem{Developed Matrix Factorization model in PyTorch}
+            \resumeItem{Implemented and trained Tabular Neural Network model in FastAi using cyclical learning rate}
+            \resumeItem{Created various negative sampling algorithms for models}
+            \resumeItem{Achieved $1^{\text{st}}$ place on Kaggle leaderboard with loss of 0.40320}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Feature Importance} $|$ \emph{Scikit-Learn, NumPy, Pandas}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented Spearman correlation, PCA, permutation importance, and drop-column importance from scratch}
+            \resumeItem{Visualized the cross-validated Gradient-Boosted Tree's $R^{2}$ trained on k most important features}
+            \resumeItem{Implemented automatic forward feature selection algorithm using permuation importance}
+            \resumeItem{Calculated variance and empirical p-value of feature importances using bootstrap samples}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, R, C++, SQL (Postgres), NoSQL (Mongo) HTML/CSS, Bash} \\
+     \textbf{Frameworks}{: Hadoop Ecosystem (HDFS, YARN, Spark, SparkMLib, HiveQL) TensorFlow, PyTorch, FastAI, Scikit-Learn, Statsmodels, Scipy, Numpy, Pandas, Matplotlib, Seaborn, Flask, BeautifulSoup, Selenium} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Amazon Web Services, MongoDB}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
