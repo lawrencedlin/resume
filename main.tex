@@ -127,7 +127,7 @@
       {M.S. Data Science}{July 2021 - August 2022 (Expected)}
       \begin{itemize}[leftmargin = 0.15in, label={}]
     \small{\item{
-     \textbf{Courses}{: Advanced Machine Learning, Distributed Computing, Distributed Data Systems (NoSQL, H2o), Time Series}}}
+     \textbf{Courses}{: Advanced Machine Learning, Distributed Computing, Distributed Data Systems, Time Series}}}
      \end{itemize}
     \resumeSubheading
       {University of California, Santa Barbara}{Santa Barbara, CA}
@@ -148,12 +148,11 @@
       {Data Science Intern}{November 2021 - Present}
       {Walmart Labs}{Sunnyvale, CA}
       \resumeItemListStart
-        \resumeItem{Analyzed customers' seasonal purchase behavior for festivals using Apache Spark and Seaborn}
+        \resumeItem{Analyzed millions of customer's seasonal purchase behavior for festivals using Apache Spark and Seaborn}
         \resumeItem{Worked on feature engineering and data cleaning including categorical encoding and sequence creation}
-        \resumeItem{Developed a Sequential Recommendation Transformer Neural Network Model in TensorFlow to recommend top-k items for a customer's next order}
-        \resumeItem{Performed hyper-parameter grid-search by deploying model on a Google Dataproc cluster}  
-        \resumeItem{Evaluated model using AUC, Hit Rate, Mean Reciprocal Rank, and Normalized Discounted Cumulative Gain. Achieved an AUC of 0.88 and MRR of 0.56.} 
-        \resumeItem{Evaluated user, item, and time embedding quality by calculating the k-closest embeddings}
+        \resumeItem{Developed a Transformer Neural Network Model in TensorFlow to sequentially recommend top-k items } 
+        \resumeItem{Performed hyper-parameter grid-search by deploying model on a Google Dataproc cluster and achieved an AUC of 0.88, Mean Reciprocal Rank of 0.56, and Normalized Discounted Cumulative Gain of *INSERT BELIEVABLE NUMBER HERE*} 
+        \resumeItem{Evaluated user, item, and time embedding quality by analyzing k-closest embedding by Euclidean distance}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -170,23 +169,14 @@
       {Research Assistant}{January 2021 - June 2021}
       {Sansum Diabetes Research Institute}{Santa Barbara, CA}
       \resumeItemListStart
-        \resumeItem{Geographically visualized diabetes severity by zip code using GeoPandas and Folium}
+        \resumeItem{Visualized diabetes severity by zip code using GeoPandas and Folium}
         
-        \resumeItem{Performed one-way ANOVA tests and Welch's t-test and found statistically signficant differences of HbA1c with Bonferroni's correction}
+        \resumeItem{Tested for statistically significant differences in HbA1c among demographic groups using ANOVA and Welch's t-test with Bonferonni Correction}
         
         \resumeItem{Modeled HbA1c with LASSO and OLS regression models achieving an $R^{2}$ of 0.77}
         
-        \resumeItem{Authored and presented weekly written reports of insights to SDRI researchers}
+        \resumeItem{Authored weekly written reports and presented insights to SDRI researchers}
     \resumeItemListEnd
-
-    \resumeSubheading
-      {Gretler Fellow}{September 2019 - June 2020}
-      {University of California, Santa Barbara}{Santa Barbara, CA}
-      \resumeItemListStart
-        \resumeItem{Web-scraped thousands of pages of state legislative data using BeautifulSoup and Selenium}
-        \resumeItem{Parsed raw text data using regular expressions to retrieve relevant fields}
-        \resumeItem{Cleaned, processed, and validated data using Pandas}
-      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -195,28 +185,26 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Implicit Rating Prediction)} $|$ \emph{Pytorch, FastAi, NumPy, Pandas}}{}
+          {\textbf{Implicit Rating Prediction}{} $|$ \emph{Pytorch, FastAI}}{}
           \resumeItemListStart
-            \resumeItem{Developed Matrix Factorization model in PyTorch}
-            \resumeItem{Implemented and trained Tabular Neural Network model in FastAi using cyclical learning rate}
-            \resumeItem{Created various negative sampling algorithms for models}
-            \resumeItem{Achieved $1^{\text{st}}$ place on Kaggle leaderboard with loss of 0.4032}
+            \resumeItem{Developed a Matrix Factorization model in PyTorch and a Tabular Neural Network model in FastAI}
+            
+            \resumeItem{Trained models with negative sampling algorithms and cyclical learning rates}
+            \resumeItem{Achieved 1st place on Kaggle leaderboard with a binary cross-entropy loss of 0.4032}
           \resumeItemListEnd
-        \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Search Engine} $|$ \emph{}}{}
+          {\textbf{Twitter and Reddit Sentiment Analysis} $|$ \emph{AWS, Databricks, Spark, MongoDB, BERT}}{}
           \resumeItemListStart
-            \resumeItem{}
-            \resumeItem{}
-            \resumeItem{}
-            \resumeItem{}
+            \resumeItem{Extracted over a year of reddit comments and tweets mentioning an controversial celebrity using REST APIs and stored data in Amazon S3 and  a MongoDB cluster}
+            \resumeItem{Created new features from text using pre-trained BERT emotion and sentiment models from HuggingFace}
+            \resumeItem{Predicted YouTube weekly viewership on engineered sentiment and emotion features using Random Forest and Gradient-Boosted Regression models through SparkML on Databricks cluster}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Feature Importance} $|$ \emph{Scikit-Learn, NumPy, Pandas}}{}
           \resumeItemListStart
-            \resumeItem{Implemented Spearman correlation, PCA, permutation importance, and drop-column importance}
-            \resumeItem{Visualized the cross-validated Gradient-Boosted Tree's $R^{2}$ trained on k most important features}
-            \resumeItem{Implemented automatic forward feature selection algorithm using permuation importance}
+            \resumeItem{Implemented Spearman correlation, Principal Components Analysis, Permutation and Drop-column importance}
+            \resumeItem{Visualized the cross-validated $R^{2}$ of a Gradient-Boosted Regressor trained on k most important features}
+            \resumeItem{Implemented automatic forward feature selection algorithm using permutation importance}
             \resumeItem{Calculated variance and empirical p-value of feature importances using bootstrap samples}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
@@ -229,7 +217,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, R, C++, SQL (Postgres), NoSQL (Mongo) HTML/CSS, Bash} \\
-     \textbf{Frameworks}{: Hadoop Ecosystem (HDFS, YARN, Spark, SparkMLib, HiveQL) TensorFlow, PyTorch, FastAI, Scikit-Learn, Statsmodels, Scipy, Numpy, Pandas, Matplotlib, Seaborn, Flask, BeautifulSoup, Selenium, H2o} \\
+     \textbf{Frameworks}{: Hadoop Ecosystem (HDFS, YARN, Spark, SparkMLib, HiveQL) TensorFlow, PyTorch, FastAI, Scikit-Learn, Statsmodels, Scipy, Numpy, Pandas, Matplotlib, Seaborn, Flask, BeautifulSoup, Selenium, H2o, HuggingFace} \\
      \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Amazon Web Services, DataBricks}
     }}
  \end{itemize}
