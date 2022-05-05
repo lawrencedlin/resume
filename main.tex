@@ -112,7 +112,7 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Lawrence Lin} \\ \vspace{1pt}
+    \textbf{\huge \scshape Lawrence Lin} \\ \vspace{1pt}
     \small San Francisco, CA $|$
     \small 925-918-2478 $|$ \href{mailto:x@x.com}{\color{blue}\underline{lawrencedlin@gmail.com}} $|$ 
     \href{https://linkedin.com/in/llinnn}{\color{blue}\underline{linkedin.com/in/llinnn}} $|$
@@ -124,12 +124,15 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of San Francisco}{}
-      {July 2021 - August 2022 (Expected)}{M.S. Data Science}
+      {University of San Francisco}{July 2021 - July 2022 (Expected)}
+      {M.S. Data Science}{}
       \begin{itemize}[leftmargin = 0.15in, label={}]
-    \small{\item{
-     \textbf{Courses}{: Advanced Machine Learning, Deep Learning, Relational Databases, NoSQL, Time Series Analysis, A/B Testing}}}
+      \small{
+     \item{
+     \textbf{Courses}{: Advanced Machine Learning, Deep Learning, Relational Databases, Time Series Analysis, A/B Testing}}
+     }
      \end{itemize}
+      
     \resumeSubheading
       {University of California, Santa Barbara}{August 2017 - June 2021}
       {B.S. Statistics}{}
@@ -149,11 +152,10 @@
       {Data Science Intern}{November 2021 - Present}
       {Walmart Labs}{Sunnyvale, CA}
       \resumeItemListStart
-        \resumeItem{Analyzed millions of customers' seasonal purchase behavior using Apache Spark and Seaborn}
-        \resumeItem{Worked on feature engineering and data cleaning including categorical encoding and sequence creation}
-        \resumeItem{Developed a Transformer Neural Network Model in TensorFlow to sequentially recommend top-k items } 
-        \resumeItem{Performed hyper-parameter grid-search by deploying model on a Google Dataproc cluster and achieved an AUC of 0.88, Mean Reciprocal Rank of 0.56, and Normalized Discounted Cumulative Gain of 0.80} 
-        \resumeItem{Evaluated user, item, and time embedding quality by analyzing k-closest embedding by Euclidean distance}
+        \resumeItem{Discovered peak festival shopping activity windows for millions of customers' using clustering algorithms}
+        \resumeItem{Independently performed feature engineering and data cleaning on distributed datasets}
+        \resumeItem{Developed and trained a Transformer Neural Network Model in TensorFlow to make personalized season-aware recommendations using historical purchases with an AUC of 0.88} 
+        \resumeItem{Validated time embedding quality by finding high average cosine similarities over 7-day windows}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -170,11 +172,20 @@
       {Research Assistant}{January 2021 - June 2021}
       {Sansum Diabetes Research Institute}{Santa Barbara, CA}
       \resumeItemListStart
-        \resumeItem{Visualized diabetes severity by zip code using GeoPandas and Folium}
+        \resumeItem{Visualized Californian zip codes most severely impacted by diabetes using GeoPandas and Folium}
         
-        \resumeItem{Tested for statistically significant differences in HbA1c among demographic groups using ANOVA and Welch's t-test with Bonferonni Correction}
+        \resumeItem{Tested for statistically significant differences in blood sugar levels among Hispanic population using ANOVA}
         
-        \resumeItem{Modeled HbA1c with LASSO and OLS regression models achieving an $R^{2}$ of 0.77}
+        \resumeItem{Modeled blood sugar levels with LASSO and OLS regression models achieving an $R^{2}$ of 0.77}
+    
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Tax Intern}{July 2020 - August 2020}
+      {Ernst \& Young}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Filed all tax returns for domestic and international clients ahead of schedule}
+        \resumeItem{Determined compliant tax accounts by collaborating with audit teams and leveraging financial statements}
     
     \resumeItemListEnd
 
@@ -184,33 +195,24 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-    \resumeProjectHeading
-          {\textbf{Search Engine}{} $|$ \emph{Hash tables, HTML}}{}
-          \resumeItemListStart
-            \resumeItem{Tokenized and normalized text from over seven thousand documents}
-            
-            \resumeItem{Indexed words to documents with a custom hash table implementation and displayed search results using Jinja}
-
-          \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Implicit Rating Prediction}{} $|$ \emph{Pytorch, FastAI}}{}
           \resumeItemListStart
-            \resumeItem{Developed a Matrix Factorization model in PyTorch and a Tabular Neural Network model in FastAI}
-            
-            \resumeItem{Trained models with negative sampling algorithms and cyclical learning rates}
+            \resumeItem{Developed a Matrix Factorization model and a Tabular Neural Network model to predict implicit hotel ratings}
+
             \resumeItem{Achieved 1st place on Kaggle leaderboard with a binary cross-entropy loss of 0.4032}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Twitter and Reddit Sentiment Analysis} $|$ \emph{AWS, Databricks, Spark, MongoDB, BERT}}{}
           \resumeItemListStart
-            \resumeItem{Extracted over a year of reddit comments and tweets mentioning an controversial celebrity using REST APIs and stored data in Amazon S3 and  a MongoDB cluster}
-            \resumeItem{Created new features from text using pre-trained BERT emotion and sentiment models from Hugging Face}
+            \resumeItem{Scraped over a year of reddit comments and tweets and stored data in Amazon S3 and a MongoDB cluster}
+            \resumeItem{Engineered new features from social media with BERT emotion and sentiment models from Hugging Face}
             \resumeItem{Predicted YouTube weekly viewership on engineered sentiment and emotion features using Random Forest and Gradient-Boosted Regression models through SparkML on Databricks cluster}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Feature Importance implementation from scratch} $|$ \emph{Scikit-Learn, NumPy, Pandas}}{}
           \resumeItemListStart
-            \resumeItem{Implemented Spearman correlation, Principal Components Analysis, Permutation and Drop-column importance}
+            \resumeItem{Manually implemented Spearman correlation, Principal Components Analysis, Permutation and Drop-column importance}
             \resumeItem{Visualized the cross-validated $R^{2}$ of a Gradient-Boosted Regressor trained on k most important features}
             \resumeItem{Implemented automatic forward feature selection algorithm using permutation importance}
             \resumeItem{Calculated variance and empirical p-value of feature importances using bootstrap samples}
