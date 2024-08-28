@@ -114,7 +114,7 @@
 \begin{center}
     \textbf{\huge \scshape Lawrence Lin} \\ \vspace{1pt}
     \small San Francisco, CA $|$
-    \small 925-918-2478 $|$ \href{mailto:x@x.com}{\color{blue}\underline{lawrencedlin@gmail.com}} $|$ 
+   \href{mailto:x@x.com}{\color{blue}\underline{lawrencedlin@gmail.com}} $|$ 
     \href{https://linkedin.com/in/llinnn}{\color{blue}\underline{linkedin.com/in/llinnn}} $|$
     \href{https://github.com/lawrencedlin}{\color{blue}\underline{github.com/lawrencedlin}}
 \end{center}
@@ -124,7 +124,7 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of San Francisco}{July 2021 - July 2022 (Expected)}
+      {University of San Francisco}{July 2021 - July 2022}
       {M.S. Data Science}{}
       \begin{itemize}[leftmargin = 0.15in, label={}]
       \small{
@@ -147,10 +147,21 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Data Scientist}{July 2022 - Present}
+      {Walmart Global Tech}{Sunnyvale, CA}
+      \resumeItemListStart
+        \resumeItem{Built from scratch a Walmart+ member feature pipeline driven by Spark and orchestrated by cron}
+        \resumeItem{Trained a Gradient-Boosted Trees churn propensity model using Walmart+ member feature platform}
+        \resumeItem{Powered intelligent order quality checks on high churn-risk members with churn model causing positive lift in GMV and re-orders} 
+      \resumeItemListEnd
+  \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Data Science Intern}{November 2021 - Present}
-      {Walmart Labs}{Sunnyvale, CA}
+      {Data Science Intern}{November 2021 - July 2022}
+      {Walmart Global Tech}{Sunnyvale, CA}
+      
       \resumeItemListStart
         \resumeItem{Discovered peak festival shopping activity windows for millions of customers' using clustering algorithms}
         \resumeItem{Independently performed feature engineering and data cleaning on distributed datasets}
@@ -171,21 +182,13 @@
     \resumeSubheading
       {Research Assistant}{January 2021 - June 2021}
       {Sansum Diabetes Research Institute}{Santa Barbara, CA}
+      
       \resumeItemListStart
         \resumeItem{Visualized Californian zip codes most severely impacted by diabetes using GeoPandas and Folium}
         
         \resumeItem{Tested for statistically significant differences in blood sugar levels among Hispanic population using ANOVA}
         
         \resumeItem{Modeled blood sugar levels with LASSO and OLS regression models achieving an $R^{2}$ of 0.77}
-    
-    \resumeItemListEnd
-    
-    \resumeSubheading
-      {Tax Intern}{July 2020 - August 2020}
-      {Ernst \& Young}{San Francisco, CA}
-      \resumeItemListStart
-        \resumeItem{Filed all tax returns for domestic and international clients ahead of schedule}
-        \resumeItem{Determined compliant tax accounts by collaborating with audit teams and leveraging financial statements}
     
     \resumeItemListEnd
 
@@ -204,30 +207,19 @@
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Twitter and Reddit Sentiment Analysis} $|$ \emph{AWS, Databricks, Spark, MongoDB, BERT}}{}
+          
           \resumeItemListStart
             \resumeItem{Scraped over a year of reddit comments and tweets and stored data in Amazon S3 and a MongoDB cluster}
             \resumeItem{Engineered new features from social media with BERT emotion and sentiment models from Hugging Face}
             \resumeItem{Predicted YouTube weekly viewership on engineered sentiment and emotion features using Random Forest and Gradient-Boosted Regression models through SparkML on Databricks cluster}
           \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Feature Importance implementation from scratch} $|$ \emph{Scikit-Learn, NumPy, Pandas}}{}
-          \resumeItemListStart
-            \resumeItem{Manually implemented Spearman correlation, Principal Components Analysis, Permutation and Drop-column importance}
-            \resumeItem{Visualized the cross-validated $R^{2}$ of a Gradient-Boosted Regressor trained on k most important features}
-            \resumeItem{Implemented automatic forward feature selection algorithm using permutation importance}
-            \resumeItem{Calculated variance and empirical p-value of feature importances using bootstrap samples}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-
-
 %
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, R, C++, SQL (Postgres), NoSQL (Mongo) HTML/CSS, Bash} \\
-     \textbf{Frameworks}{: Hadoop Ecosystem (HDFS, YARN, Spark, SparkMLib, HiveQL) TensorFlow, PyTorch, FastAI, Scikit-Learn, Statsmodels, Scipy, Numpy, Pandas, Matplotlib, Seaborn, Flask, BeautifulSoup, Selenium, H2O} \\
+     \textbf{Frameworks}{: Hadoop Ecosystem (HDFS, YARN, Spark, SparkMLib, HiveQL) TensorFlow, PyTorch, Scikit-Learn} \\
      \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Amazon Web Services, Databricks}}}
     
  \end{itemize}
@@ -235,4 +227,3 @@
 
 %-------------------------------------------
 \end{document}
-
