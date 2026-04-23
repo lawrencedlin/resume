@@ -20,19 +20,6 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -76,13 +63,6 @@
     \end{tabular*}\vspace{-8pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
-}
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -91,34 +71,59 @@
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
-
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
 
 \begin{center}
     \textbf{\huge \scshape Lawrence Lin} \\ \vspace{1pt}
     \small San Francisco, CA $|$
-   \href{mailto:x@x.com}{\color{blue}\underline{lawrencedlin@gmail.com}} $|$ 
+   \href{mailto:lawrencedlin@gmail.com}{\color{blue}\underline{lawrencedlin@gmail.com}} $|$ 
     \href{https://linkedin.com/in/llinnn}{\color{blue}\underline{linkedin.com/in/llinnn}} $|$
     \href{https://github.com/lawrencedlin}{\color{blue}\underline{github.com/lawrencedlin}}
 \end{center}
 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Walmart Global Tech}{Sunnyvale, CA}
+      {Senior Data Scientist, Machine Learning}{June 2025 - Present}
+      \resumeItemListStart
+        \resumeItem{Engineered personalized Walmart+ signup offer strategies using XGBoost pipelines, optimizing the acquisition funnel for sustained paid membership growth.}
+        \resumeItem{Automated personalized marketing efforts by developing on the GenAI Smart Creatives pipeline. Implemented a RAG-backed, multi-LLM architecture featuring automated generation, evaluation, and refinement stages to produce high-performing, guideline-compliant copies at scale.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Data Scientist}{July 2022 - June 2025}
+      \resumeItemListStart
+        \resumeItem{Reduced Walmart+ cancellations by greater than 1\% by targeting high lifetime value customers with save offers.}
+        \resumeItem{Developed sequential recommendation engines utilizing Triple2Vec and advanced vector similarity frameworks to map complex temporal user behaviors to optimal next-best items.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Data Science Intern}{November 2021 - July 2022}
+      \resumeItemListStart
+        \resumeItem{Architected an unsupervised clustering pipeline using K-Means in Apache Spark to isolate high-density seasonal purchasing windows across millions of customer transactions.}
+        \resumeItem{Developed a Transformer-based sequential recommendation model for next-item prediction.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+ 
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -129,7 +134,7 @@
       \begin{itemize}[leftmargin = 0.15in, label={}]
       \small{
      \item{
-     \textbf{Courses}{: Advanced Machine Learning, Deep Learning, Relational Databases, Time Series Analysis, A/B Testing}}
+     \textbf{Courses}{: Advanced Machine Learning, Deep Learning, Relational Databases, Distributed Data Systems, A/B Testing}}
      }
      \end{itemize}
       
@@ -138,91 +143,37 @@
       {B.S. Statistics}{}
       \begin{itemize}[leftmargin = 0.15in, label={}]
     \small{\item{
-     \textbf{Courses}{: Machine Learning, Bayesian Statistics, Stochastic Processes, Data Structures and Algorithms}}}
+     \textbf{Courses}{: Machine Learning, Bayesian Statistics, Stochastic Processes, Natural Language Processing, Computer Vision}}}
      \end{itemize}
   \resumeSubHeadingListEnd
-    
-
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-  
-    \resumeSubheading
-      {Data Scientist}{July 2022 - Present}
-      {Walmart Global Tech}{Sunnyvale, CA}
-      \resumeItemListStart
-        \resumeItem{Built from scratch a Walmart+ member feature pipeline driven by Spark and orchestrated by cron}
-        \resumeItem{Trained a Gradient-Boosted Trees churn propensity model using Walmart+ member feature platform}
-        \resumeItem{Powered intelligent order quality checks on high churn-risk members with churn model causing positive lift in GMV and re-orders} 
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Data Science Intern}{November 2021 - July 2022}
-      {Walmart Global Tech}{Sunnyvale, CA}
-      
-      \resumeItemListStart
-        \resumeItem{Discovered peak festival shopping activity windows for millions of customers' using clustering algorithms}
-        \resumeItem{Independently performed feature engineering and data cleaning on distributed datasets}
-        \resumeItem{Developed and trained a Transformer Neural Network Model in TensorFlow to make personalized season-aware recommendations using historical purchases with an AUC of 0.88} 
-        \resumeItem{Validated time embedding quality by finding high average cosine similarities over 7-day windows}
-      \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    \resumeSubheading
-      {Research Assistant}{January 2021 - June 2021}
-      {Sansum Diabetes Research Institute}{Santa Barbara, CA}
-      
-      \resumeItemListStart
-        \resumeItem{Visualized Californian zip codes most severely impacted by diabetes using GeoPandas and Folium}
-        
-        \resumeItem{Tested for statistically significant differences in blood sugar levels among Hispanic population using ANOVA}
-        
-        \resumeItem{Modeled blood sugar levels with LASSO and OLS regression models achieving an $R^{2}$ of 0.77}
-    
-    \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Implicit Rating Prediction}{} $|$ \emph{Pytorch, FastAI}}{}
+          {\textbf{Implicit Rating Prediction} $|$ \emph{PyTorch, FastAI}}{}
           \resumeItemListStart
-            \resumeItem{Developed a Matrix Factorization model and a Tabular Neural Network model to predict implicit hotel ratings}
-
-            \resumeItem{Achieved 1st place on Kaggle leaderboard with a binary cross-entropy loss of 0.4032}
+            \resumeItem{Developed a Matrix Factorization model and a Tabular Neural Network model to predict implicit hotel ratings.}
+            \resumeItem{Achieved 1st place on Kaggle leaderboard with a binary cross-entropy loss of 0.4032.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Twitter and Reddit Sentiment Analysis} $|$ \emph{AWS, Databricks, Spark, MongoDB, BERT}}{}
+          {\textbf{Social Sentiment \& Emotion Analysis} $|$ \emph{AWS, Databricks, Spark, MongoDB, BERT}}{}
           \resumeItemListStart
-            \resumeItem{Scraped over a year of reddit comments and tweets and stored data in Amazon S3 and a MongoDB cluster}
-            \resumeItem{Engineered new features from social media with BERT emotion and sentiment models from Hugging Face}
-            \resumeItem{Predicted YouTube weekly viewership on engineered sentiment and emotion features using Random Forest and Gradient-Boosted Regression models through SparkML on Databricks cluster}
+            \resumeItem{Engineered social sentiment pipelines by scraping Reddit and Twitter, storing unstructured data across Amazon S3 and MongoDB clusters.}
+            \resumeItem{Extracted deep linguistic features utilizing BERT-based emotion and sentiment NLP models via Hugging Face.}
+            \resumeItem{Deployed Random Forest and Gradient-Boosted Regression models via SparkML on Databricks to accurately forecast YouTube weekly viewership using engineered sentiment indicators.}
           \resumeItemListEnd
-%
+    \resumeSubHeadingListEnd
+
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, R, C++, SQL (Postgres), NoSQL (Mongo) HTML/CSS, Bash} \\
-     \textbf{Frameworks}{: Hadoop Ecosystem (HDFS, YARN, Spark, SparkMLib, HiveQL) TensorFlow, PyTorch, Scikit-Learn} \\
-     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Amazon Web Services, Databricks}}}
-    
+     \textbf{Languages}{: Python, R, C++, SQL, HTML/CSS, Unix/Linux} \\
+     \textbf{Frameworks \& Methodologies}{: PyTorch, TensorFlow, Scikit-Learn, XGBoost, Transformers, LLMs/RAG, Causal Inference, LangChain} \\
+     \textbf{Infrastructure \& Tools}{: Git, Docker, Apache Spark, Hadoop, Google Cloud Platform (GCP), Airflow, Amazon Web Services (AWS), Databricks,}
+     }}
  \end{itemize}
-
 
 %-------------------------------------------
 \end{document}
-
